@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.ojas {
+    background-image: url('/assets/hojasFondo.jpg');
+    height: 100%;
+    width: 200%;
+    position: relative;
+    left: 85%;
+    opacity: 0.9;
+}
+
+section{
+    width: 100%;
+}
+
+.tel {
+    height: 70%;
+    width: 180px;
+    position: absolute;
+    left: 75%;
+    top: 20%;
+    
+}
+
+.pc {
+    height: 50vh;
+    width: 100%;
+    left: 60%;
+}
+
+/* Header */
+header {
+    background-color: rgb(30, 23, 47);
+    color: white;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+}
+
+.container-logo img {
+    background-image: url('/assets/logo1.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 40px; 
+    width: 100%; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    font-size: 14px;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+.container-download {
+    background: linear-gradient(to right,#863fd5, #1b73d5) ;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.container-download:hover {
+    background-color: #1d4ed8;
+}
+
+/* Hero Section */
+.container-hero {
+    background-color: rgb(46, 37, 80);
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.container-hero .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.container-hero-content {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.container-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.container-hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.container-hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.container-primary {
+    background-color: rgb(253, 253, 253);
+    color: hsl(329, 89%, 59%);
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.container-primary:hover {
+    background-color: #d81b60;
+}
+
+.container-secondary {
+    border: 1px solid white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.container-hero-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-hero-image img {
+    max-height: 500px;
+}
+
+/* Features Section */
+.container-features {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.container-features h2 {
+    color: #e91e63;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+.container-feature-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.container-feature-image {
+    width: 30%;
+    left: 70%;
+}
+
+.container-feature-text {
+    width: 55%;
+}
+
+.container-feature-text h3 {
+    font-size: 24px;
+    color: rgb(201, 78, 142);
+    margin-bottom: 15px;
+}
+
+.container-feature-text p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.container-feature-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.container-check-mark {
+    color: #e91e63;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Pricing Section */
+.container-pricing {
+    background-color:rgb(29, 22, 46);
+    color: white;
+    padding: 80px 0;
+}
+
+.container-pricing h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.container-pricing-desc {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    opacity: 0.9;
+}
+
+.container-plans {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.container-plan-card {
+    background-color: white;
+    color: #333;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container-plan-icon {
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.container-plan-icon.container-lite {
+    color: #e91e63;
+}
+
+.container-plan-icon.container-standard {
+    color: rgb(68, 63, 88);
+}
+
+.container-plan-icon.container-ultimate {
+    color: #333;
+}
+
+.container-plan-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.container-plan-price {
+    margin-bottom: 25px;
+}
+
+.container-plan-price .container-price {
+    font-size: 36px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.container-plan-price .container-period {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.container-plan-features {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.container-plan-features li {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.container-check-icon {
+    color: #e91e63;
+    font-size: 8px;
+    margin-right: 10px;
+}
+
+.container-plan-card:nth-child(2) .container-check-icon {
+    color:rgb(68, 63, 88);
+}
+
+.container-plan-card:nth-child(3) .container-check-icon {
+    color: #333;
+}
+
+.container-feature-disabled {
+    opacity: 0.5;
+}
+
+.container-feature-disabled i {
+    color: #ccc;
+    margin-right: 10px;
+}
+
+.container-plan-info {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.container-btn-subscribe {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+.container-btn-subscribe:hover {
+    opacity: 0.9;
+}
+
+.container-lite-btn {
+    background-color: #e91e63;
+}
+
+.container-standard-btn {
+    background-color: rgb(46, 37, 80);
+}
+
+.container-ultimate-btn {
+    background-color: rgb(46, 37, 80);
+}
+
+/* Footer */
+footer {
+    background-color: rgb(255, 255, 255);
+    color: rgb(124, 124, 124);
+    padding: 20px 0;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.container-social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.container-social-links a {
+    transition: opacity 0.3s;
+}
+
+.container-social-links a:hover {
+    opacity: 0.7;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .container-hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .container-hero-content {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    
+    .container-hero-buttons {
+        justify-content: center;
+    }
+    
+    .container-hero-image {
+        width: 80%;
+    }
+    
+    .container-feature-content {
+        flex-direction: column;
+    }
+    
+    .container-feature-image, .container-feature-text {
+        width: 100%;
+    }
+    
+    .container-feature-text {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    
+    nav {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .container-plans {
+        gap: 20px;
+    }
+    
+    .container-plan-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-hero h1 {
+        font-size: 36px;
+    }
+    
+    .container-hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .container-pricing h2, .container-features h2 {
+        font-size: 28px;
+    }
+    
+    nav {
+        gap: 15px;
+    }
+    
+    nav a {
+        font-size: 13px;
+    }
+}
